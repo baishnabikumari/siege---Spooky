@@ -1,0 +1,30 @@
+:root{
+    --bg: #070707;
+    --panel: #0b0b0b;
+    --accent: #ff3b3b;
+    --ghost: #8ef0c7;
+    --fog: rgba(255,255,255,0.03);
+    --muted: #9b9b9b;
+}
+
+*{box-sizing:border-box}
+html,body{height: 100%;}
+body.ttd{
+    margin:0;
+    background:radial-gradient(ellipse at top, rgba(20,20,20,1) 0%, var(--bg) 70%);
+    color:#eaeaea;
+    font-family:"VT323", "Courier New", monospace;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.2;
+    padding:10px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    margin-bottom:16px;
+}
+
