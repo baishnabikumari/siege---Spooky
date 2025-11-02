@@ -182,3 +182,78 @@ body.ttd{
     padding-top:8px;
 }
 
+.overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+    background:transparent;
+    pointer-events:none;
+}
+
+.overlay.blackout{
+    background:black;
+    opacity:0.95;
+    pointer-events:auto;
+    z-index:40;
+}
+
+.overlay .overlay-text{
+    padding:12px 18px;
+    border-radius:8px;
+    background:rgba(0,0,0,0.6);
+}
+
+.modal{
+    position:fixed;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,0.6);
+    z-index:100;
+    opacity:0;
+    pointer-events:none;
+}
+
+.modal[aria-hidden='false']{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.modal-content{
+    background:#071015;
+    padding:16px;
+    border-radius:10px;
+    min-width:320px;
+    max-width:420px;
+    border:1px solid rgba(255,255,255,0.03);
+}
+
+.shake{
+    animation:shake .42s ease;
+}
+@keyframes shake{10%{transform:translateX(-3px)}30%{transform:translateX(2px)}50%{transform:translateX(-2px)}70%{transform:translateX(1px)}100%{transform:translateX(0)}}
+
+.glitch{animation:glitch .36s steps(2, end) 1}
+@keyframes glitch{0%{text-shadow: -2px 0 var(--accent);}50%{text-shadow: 2px 0 var(--ghost);}100%{text-shadow:none}}
+
+.body.blackout{
+    transform:background .5s ease;
+    background:black;
+    color:#111;
+}
+
+.footer{
+    margin-top:14px;
+    color:var(--muted);
+    font-size:12px;
+}
+
+@media (max-width:640px){
+    .console{padding:12px;}
+    .title h1{font-size:22px;}
+}
