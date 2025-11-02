@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Type...Till Dawn - Keep Typing or they'll find you.</title>
     <link rel="stylesheet" href="css/style.css"/>
     <!--fallback to courier new-->
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
 </head>
+
 <body class="ttd">
     <header class="header">
         <div class="title">
@@ -23,32 +23,66 @@
         </div>
     </header>
 
-<main class="main">
-    <div class="bg-fog" aria-hidden="true"></div>
+    <main class="main">
+        <div class="bg-fog" aria-hidden="true"></div>
 
-    <section class="console" tabindex="0" id="console" aria-label="Typing console" role="application">
-        <div id="prompt-wrapper" class="prompt-wrapper" aria-live="polite">
-            <div id="prompt" class="prompt">Start Typing... If you Dare</div>
-        </div>
+        <section class="console" tabindex="0" id="console" aria-label="Typing console" role="application">
+            <div id="prompt-wrapper" class="prompt-wrapper" aria-live="polite">
+                <div id="prompt" class="prompt">Start Typing... If you Dare</div>
+            </div>
 
-        <div id="typed-wrapper" class="typed-wrapper" aria-live="off">
-            <div id="typed" class="typed" aria-hidden="false">
+            <div id="typed-wrapper" class="typed-wrapper" aria-live="off">
+                <div id="typed" class="typed" aria-hidden="false"></div>
+                <span id="cursor" class="cursor" aria-hidden="true">_</span>
             </div>
-            <span id="cursor" class="cursor" aria-hidden="true">_</span>
-        </div>
 
-        <div class="hud">
-            <div class="hud-left">
-                <div>Timer: <span id="timer">--:--</span></div>
-                <div>WPM: <span id="wpm">0</span></div>
+            <div class="hud">
+                <div class="hud-left">
+                    <div>Timer: <span id="timer">--:--</span></div>
+                    <div>WPM: <span id="wpm">0</span></div>
+                </div>
+                <div class="hud-right">
+                    <div>Accuracy: <span id="accuracy">100</span></div>
+                    <div>Mistakes: <span id="mistakes">0</span></div>
+                </div>
             </div>
-            <div class="hud-right">
-                <div>Accuracy: <span id="accuracy">100</span></div>
-                <div>Mistakes: <span id="mistakes">0</span></div>
+            
+            <!--Buttons-->
+            <div class="actions">
+                <button id="btn-start" class="btn primary">Start Typing... If You Dare</button>
+                <select id="level-select" class="level-select" aria-label="Select level">
+                    <!--Leave this on JS brah☺️-->
+                </select>
+                <button id="btn-leaderboard" class="btn">Leaderboard</button>
             </div>
-        </div>
-        
-    </section>
-</main>
+
+            <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+            <div id="leaderboard-modal" class="modal" aria-hidden="true">
+                <div class="modal-content">
+                    <h3>Local Leaderboard</h3>
+                    <ol id="leaderboard-list"></ol>
+                    <div class="modal-actions">
+                        <button id="lb-clear" class="btn">Clear</button>
+                        <button id="lb-close" class="btn primary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Hint-->
+        <aside class="dev-note" aria-hidden="true">
+            <small>dev: press SHIFT+M to trigger an intentional mistake (testing)</small>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <small>Made with slight imperfection. <span id="spiritual-stability">Spiritual Stability: Stable</span></small>
+    </footer>
+
+    <!--Load data first-->
+    <script src="js/data.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
