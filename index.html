@@ -24,7 +24,31 @@
     </header>
 
 <main class="main">
-    
+    <div class="bg-fog" aria-hidden="true"></div>
+
+    <section class="console" tabindex="0" id="console" aria-label="Typing console" role="application">
+        <div id="prompt-wrapper" class="prompt-wrapper" aria-live="polite">
+            <div id="prompt" class="prompt">Start Typing... If you Dare</div>
+        </div>
+
+        <div id="typed-wrapper" class="typed-wrapper" aria-live="off">
+            <div id="typed" class="typed" aria-hidden="false">
+            </div>
+            <span id="cursor" class="cursor" aria-hidden="true">_</span>
+        </div>
+
+        <div class="hud">
+            <div class="hud-left">
+                <div>Timer: <span id="timer">--:--</span></div>
+                <div>WPM: <span id="wpm">0</span></div>
+            </div>
+            <div class="hud-right">
+                <div>Accuracy: <span id="accuracy">100</span></div>
+                <div>Mistakes: <span id="mistakes">0</span></div>
+            </div>
+        </div>
+        
+    </section>
 </main>
 </body>
 </html>

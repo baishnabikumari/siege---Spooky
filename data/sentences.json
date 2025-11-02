@@ -1,0 +1,24 @@
+{
+  "levels": [
+    { "id":1, "text":"The first key I pressed echoed louder than it should have — like it had been waiting 101 years." },
+    { "id":2, "text":"The oldest and strongest emotion of mankind is fear 001, and it still lingers between each keystroke." },
+    { "id":3, "text":"Each tap of the spacebar sounded like a heartbeat — 7… 8… 9 — faster every time I typed." },
+    { "id":4, "text":"No live organism can continue at 120 WPM under conditions of absolute fear." },
+    { "id":5, "text":"My code compiled perfectly, but line 666 kept rewriting itself in red." },
+    { "id":6, "text":"The walls whispered in binary: 01001000 01000101 01001100 01010000." },
+    { "id":7, "text":"The cursor blinked 13 times before the screen asked, ‘Are you alone?’" },
+    { "id":8, "text":"I hit ESC repeatedly, but the system replied '404.666 — soul not found.'" },
+    { "id":9, "text":"I pressed F1 for help, but the whispers said 'function unavailable.'" },
+    { "id":10, "text":"Every word I typed appeared twice — once on screen, once in the mirror." },
+    { "id":11, "text":"I held Control, but something else was holding me." },
+    { "id":12, "text":"> run type_till_dawn.exe — 0%… 13%… 66%… 100%… then silence." },
+    { "id":13, "text":"The keyboard typed 'hello' on its own at 3:33 AM." },
+    { "id":14, "text":"Between Q and W a new key appeared — its label read '13'." },
+    { "id":15, "text":"I heard all things in the heaven and in the earth — and many things in hell." },
+    { "id":16, "text":"I tried to fix the error, but each Ctrl + Z only brought it closer." },
+    { "id":17, "text":"The monitor displayed 'task complete' but the CPU temp rose to 666 °C." },
+    { "id":18, "text":"Thirteen keys pressed themselves down without a sound." },
+    { "id":19, "text":"Parentheses closed themselves and the semicolon bled across the screen." },
+    { "id":20, "text":"System rebooting… WPM: 999 | Status: Possessed." }
+  ]
+}
